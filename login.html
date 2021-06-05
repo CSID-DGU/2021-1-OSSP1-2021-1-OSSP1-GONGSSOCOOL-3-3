@@ -1,5 +1,5 @@
 <DOCTYPE HTML5>
-    <html>
+<html>
     <head>
         <link rel="stylesheet" type="text/css" href="./src/css/login.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -7,10 +7,12 @@
                 crossorigin="anonymous"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
-      <image class="bkg" src="./src/css/image/background.png" style="opacity: 0.5"></image>
+    
+    <image class="bkg" src="./src/css/image/background.png" style="opacity: 0.5"></image>
+
     <form id="login" action="#" method="post" class="loginForm" onsubmit="return false;">
         <h2>LOGIN</h2>
-        <div class="emailForm" id="userEmail">
+        <div class="emailForm">
             <input type="text" name="email" class="email" placeholder="Email">
         </div>
         <div class="passForm">
@@ -19,6 +21,7 @@
         <button type="submit" class="btn">
             LOG IN
         </button>
+
         <div class="bottomText">
             Don't you have ID?
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="location.href='signup.html'">sign up</a>
@@ -57,9 +60,8 @@
                         }
                     });
                     return false;
-                }
-            );
-        </script>
-    </form>
+                });
+            </script>
+        </form>
     </body>
-    </html>
+</html>
