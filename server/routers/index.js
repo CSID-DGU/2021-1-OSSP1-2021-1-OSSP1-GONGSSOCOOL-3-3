@@ -1,5 +1,6 @@
 const schedule = require('./schedule');
 const user = require('./user');
+const calendar = require('./calendar');
 const notice = require('./notice');
 const team = require('./team');
 
